@@ -1,0 +1,22 @@
+﻿<Page x:Class="ProjektZalWPF.PageFilm"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ProjektZalWPF"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="600"
+      Title="PageFilm">
+
+    <StackPanel>
+        <Image Name="imgPZPN" VerticalAlignment="Top" HorizontalAlignment="Center" Source="C:\Users\Adam Szczuko\Documents\Visual Studio 2017\Projects\ProjektZalWPF\ProjektZalWPF\Sources\PZPN.png" MaxHeight="250"/>
+        <MediaElement Name="filmPromocyjny" Visibility="Hidden" VerticalAlignment="Top" MinWidth="300" HorizontalAlignment="Center" LoadedBehavior="Manual" UnloadedBehavior="Stop" Source="C:\Users\Adam Szczuko\Desktop\filmpromocyjny.mp4"/>
+        <Grid VerticalAlignment="Bottom" Margin="10">
+            <Button x:Name="btnPlay" Content="Start" Margin="5,0,0,25" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left" Width="40" Click="btnPlay_Click"/>
+            <Button Name="btnPause" Content="Zatrzymaj" Margin="45,0,0,25" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left" Width="60" Click="btnPause_Click"/>
+            <Button Name="btnStop" Content="Stop" Margin="115,0,0,25" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left" Width="40" Click="btnStop_Click"/>
+            <Slider Name="sldrSound" Margin="5,0,5,25" Height="20" VerticalAlignment="Top" HorizontalAlignment="Right" Width="80" ValueChanged="sldrSound_ValueChanged" Minimum="0" Maximum="1" Value="0.5"/>
+            <Slider Name="sldrTimeline" Margin="5,0,5,0" VerticalAlignment="Bottom" ValueChanged="sldrTimeline_ValueChanged"/>
+        </Grid>
+    </StackPanel>
+</Page>

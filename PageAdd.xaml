@@ -1,0 +1,27 @@
+﻿<Page x:Class="ProjektZalWPF.PageAdd"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ProjektZalWPF"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="600"
+      Title="Dodawanie artykułu"
+      Background="DarkSeaGreen">
+
+    <Grid Margin="5">
+        <Label Content="Tytuł artykułu:" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <TextBox x:Name="txtBoxNazwaArt" HorizontalAlignment="Left" Height="23" Margin="85,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250"/>
+        <Label Content="WZÓR: Artykuł [NR] - [Nazwa Artykułu]" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="340,0,0,0" Opacity="0.5"/>
+        <Label Content="Treść artykułu:" HorizontalAlignment="Left" Margin="0,35,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBoxZawArt" HorizontalAlignment="Left" Height="326" Margin="85,35,5,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="500"/>
+        <Button x:Name="btnAdd" Content="Dodaj" HorizontalAlignment="Right" Margin="506,362,5,0" VerticalAlignment="Bottom" Width="75" Click="btnAdd_Click" Height="22"/>
+        <ComboBox x:Name="cBoxRodzajGry" HorizontalAlignment="Right" Margin="0,0,93,0" VerticalAlignment="Bottom" Width="143" SelectedIndex="0" SelectionChanged="cBoxRodzajGry_SelectionChanged">
+            <ComboBoxItem Content="Przepisy Gry w Piłkę:" IsEnabled="False"/>
+            <ComboBoxItem Content="Trawiastą"/>
+            <ComboBoxItem Content="Halową"/>
+            <ComboBoxItem Content="Plażową"/>
+        </ComboBox>
+
+    </Grid>
+</Page>

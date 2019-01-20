@@ -1,0 +1,30 @@
+﻿<Page x:Class="ProjektZalWPF.PageDel"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ProjektZalWPF"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="600"
+      Title="PageDelete"
+      Background="IndianRed">
+
+    <Grid Margin="5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="56*"/>
+            <ColumnDefinition Width="239*"/>
+        </Grid.ColumnDefinitions>
+        <ComboBox x:Name="cBoxJakiePrzepisy" HorizontalAlignment="Left" VerticalAlignment="Top" Width="143" SelectedIndex="0" SelectionChanged="cBoxJakiePrzepisy_SelectionChanged" Grid.ColumnSpan="2">
+            <ComboBoxItem Content="Przepisy Gry w Piłkę:" IsEnabled="False"/>
+            <ComboBoxItem Content="Trawiastą"/>
+            <ComboBoxItem Content="Halową"/>
+            <ComboBoxItem Content="Plażową"/>
+        </ComboBox>
+        <ComboBox x:Name="cBoxWhatLaws" HorizontalAlignment="Left" VerticalAlignment="Top" Width="300" SelectedIndex="0" SelectionChanged="cBoxWhatLaws_SelectionChanged" Margin="38.408,0,0,0" Grid.Column="1" IsEnabled="False">
+            <ComboBoxItem Content="Wybierz artykuł:"/>
+        </ComboBox>
+        <Label x:Name="lblTrescArt" HorizontalAlignment="Left" Margin="0,30,0,0" VerticalAlignment="Top" Background="WhiteSmoke" Height="330" Width="590" Grid.ColumnSpan="2" IsManipulationEnabled="True"/>
+        <Button x:Name="btnSee" Content="Wyświetl" HorizontalAlignment="Right" Margin="0" VerticalAlignment="Top" Width="75" Height="22" Grid.Column="1" Click="btnSee_Click"/>
+        <Button x:Name="btnDel" Content="USUŃ" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="150" Background="Red" FontWeight="Bold" Grid.Column="1" Margin="108.408,0,220,0" Click="btnDel_Click"/>
+    </Grid>
+</Page>

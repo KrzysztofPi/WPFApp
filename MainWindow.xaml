@@ -1,0 +1,20 @@
+﻿<Window x:Class="ProjektZalWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjektZalWPF"
+        mc:Ignorable="d"
+        Title="Referee App" Height="500" Width="650">
+    <Grid>
+        <StackPanel>
+            <Menu Background="Azure">
+                <MenuItem Name="btnDodaj" Header="_Dodaj" Background="LightGreen" Click="btnDodaj_Click"/>
+                <MenuItem Name="btnEdytuj" Header="_Edytuj" Background="Orange" Click="btnEdytuj_Click"/>
+                <MenuItem Name="btnUsun" Header="_Usuń" Background="Red" Click="btnUsun_Click"/>
+                <MenuItem Name="btnPomoc" Header="_Pomoc" Background="MediumAquamarine" Click="btnPomoc_Click"/>
+            </Menu>
+        </StackPanel>
+        <Frame Name="Main" Margin="0,20,0,0"/>
+    </Grid>
+</Window>
